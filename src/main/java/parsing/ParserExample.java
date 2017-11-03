@@ -16,7 +16,8 @@ public class ParserExample {
 		/*
 		 * Note that you can also use RDFDataMgr as follows:
 		 * RDFDataMgr.parse(tripleHandler, fileName); I am not sure what is the
-		 * difference.
+		 * difference. After a quick evaluation, I think using RDFDataMrg (in Jena2) is
+		 * faster than using RDFParser (in Jena3)
 		 */
 		long end = System.currentTimeMillis();
 		long time = (end - start) / 1000;
